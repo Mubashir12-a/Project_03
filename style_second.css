@@ -1,0 +1,100 @@
+/*///////////////////////////////////--Second-Section--//////////////////////////////////////////*/
+
+#Second {
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Second #parent-box {
+    background-color: #111111;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+  }
+
+  #Second .child-box-1 {
+    color: white;
+    font-size: 4vw;
+  }
+
+  #Second .child-box-2 {
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+  }
+
+  .Product {
+    height: 40vh;
+    width: 40vh;
+    background-color: #111111;
+    position: absolute;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Product:nth-child(1) {
+    left: -5%;
+    top: -30%;
+  }
+
+  .Product:nth-child(2) {
+    left: 40%;
+    bottom: -30%;
+  }
+
+  .Product:nth-child(3) {
+    right: -5%;
+    top: -30%;
+  }
+
+  .Product img {
+    height: 100%;
+    transition: all 0.5s;
+  }
+
+  .Product img:nth-child(2) {
+    position: absolute;
+    height: 100%;
+    transition: all 0.5s;
+  }
+
+  .Product:hover img:nth-child(2){
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+
+  .Product:hover img:nth-child(1){
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  @media (max-width : 1000px){
+    #Second {
+      height: 100vw;
+      margin-top: 30vw;
+    }
+
+    .Product {
+      height: 25vw;
+      width: 25vw;
+    }
+
+    .Product:nth-child(2) {
+      left: 35%;
+    }
+  }
+
